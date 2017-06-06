@@ -1,0 +1,19 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "description": "training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mensa10/TimerTut.git"
+  },
+  "author": "Mensur Bektic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mensa10/TimerTut/issues"
+  },
+  "homepage": "https://github.com/Mensa10/TimerTut#readme"
+}
