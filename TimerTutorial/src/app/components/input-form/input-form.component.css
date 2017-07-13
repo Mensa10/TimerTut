@@ -1,0 +1,122 @@
+.inputForm {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+}
+
+.firstRow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.slds-m-top--small {
+    width: 48%;
+}
+
+.secondRow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding-top: 10px;
+    margin: 15px;
+
+}
+
+.thirdRow {
+    display: flex;
+    flex-flow: column wrap;
+    width:100%;
+    padding: 0px 10px 0px 10px;
+}
+
+.thirdRow label {
+    padding-bottom: 5px;
+}
+
+.thirdRow input[type = text] {
+    padding: 6px;
+    border: none;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+}
+
+.fourthRow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.time {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+}
+
+#foo {
+    padding: 2px;
+    font-size: 17px;
+}
+
+.date {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    align-items: flex-end;
+}
+
+.dTPic {
+    position: absolute;
+    right: 300px;
+    bottom: 100px;
+    background-color: #95a5a6;
+}
+
+.fivRow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 39px;
+}
+.reset {
+    background-color: #34495e;
+    width: 50%;
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+.start {
+    width: 50%;
+    font-size: 18px;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+.company {
+    width: 45%;
+}
+
+.user {
+    width: 45%;
+}
+
+.error {
+    font-size: 14px;
+    font-style: bold;
+    color: #ff0000;
+}
+
+form {
+    width: 100%;
+}

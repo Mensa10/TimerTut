@@ -1,0 +1,11 @@
+<div class="taskBox" *ngFor="let item of taskData" 
+  (click)="startTask(item.id, item.time)" 
+  [ngClass]="{'runTask': item.id == publicID && started == true}">
+    <div class="info">
+      <span>{{item.task_name}}</span>
+      <h4>{{item.company_name}}</h4>
+    </div>
+    <div class="time">
+      <span>{{item.time}}</span>
+    </div>
+  </div>

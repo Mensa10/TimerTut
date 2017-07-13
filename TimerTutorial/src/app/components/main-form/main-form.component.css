@@ -7,22 +7,27 @@
     background-color: #ecf0f1;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
 }
 
 .frame {
     display: flex;
-    border: 1px solid black;
-    height: 70%;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    border: 1px solid #95a5a6;
+    height: auto;
     width: 60%;
-    box-shadow: 2px 2px 2px #95a5a6;
-    background-color: #ffffff;
+    box-shadow: 0 0 5px 2px #95a5a6;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    min-height: 384px;
 }
 
 h1 {
     padding: 10px;
+    font-size: 50px;
     
 }
 

@@ -1,3 +1,19 @@
-<p>
-  login works!
-</p>
+<div class="loginPage">
+  <div class="header">
+    <i class="fa fa-clock-o" aria-hidden="true"></i>
+  </div>
+  <div class="login">
+    <form>
+      <div class="formControls">
+        <label for="">Username</label>
+        <input type="text" placeholder="" [required]="required" [(ngModel)] = "currUser.username" name="username">
+        <label for="">Password</label>
+        <input type="password" placeholder="" [required]="required" [(ngModel)] = "currUser.password" name="password">
+      </div>
+    </form>
+  </div>
+  <div class="buttons">
+    <button type="button" nglButton="neutral" class="cancelBtn">Cancel</button>
+    <button type="button" [nglButton]="selected ? 'destructive' : 'neutral'" class="loginBtn" (click)="onLogin()">Login</button>
+  </div>
+</div>

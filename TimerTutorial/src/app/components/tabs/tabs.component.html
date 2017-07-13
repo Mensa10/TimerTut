@@ -1,0 +1,19 @@
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#tasks" (click) = "aloalo.getTaskData()"><i class="fa fa-clock-o" aria-hidden="true"></i></a></li>
+    <li><a data-toggle="tab" href="#input"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+    <li class="pull-right" (click) = "logout()"><a data-toggle="tab" href="#logout"><i class="fa fa-arrow-circle-up" aria-hidden="true" ></i></a></li>
+</ul>
+<div class="tab-content">
+    <div id="tasks" class="tab-pane fade in active">
+        <app-all-tasks #aloalo></app-all-tasks>
+    </div>
+    <div id="input" class="tab-pane fade">
+        <app-input-form></app-input-form>
+    </div>
+    <div id="logout" class="tab-pane fade">
+        <div class="logout">
+            <h2>Loging out</h2>
+            <i class="fa fa-spinner fa-spin" style="font-size:50px"></i>
+        </div>
+    </div>
+</div>

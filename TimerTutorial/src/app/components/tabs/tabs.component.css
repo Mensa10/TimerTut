@@ -1,0 +1,22 @@
+ngl-tabs ul li a {
+    text-decoration: none;
+}
+
+.slds-tabs--scoped__content {
+    padding: 0;
+    height: 358px;
+}
+
+i {
+    font-size: 20px;
+}
+
+.logout {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 115px;
+    height: 100%;
+}

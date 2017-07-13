@@ -1,3 +1,46 @@
-<p>
-  input-form works!
-</p>
+<div class="inputForm">
+  <form [formGroup]="userForm">
+    <div class="firstRow">
+      <div class="company">
+        <label for="">Firma</label>
+        <select class="form-control" formControlName="company">
+        <option selected *ngFor ="let comp of companies" [value] = "comp.company_name">{{comp.company_name}}</option>
+      </select>
+        <span class="error" *ngIf="!userForm.controls['company'].valid && userForm.controls['company'].touched">Firma je obavezna za unos</span>
+      </div>
+      <div class="user">
+        <label for="">Korisnik</label>
+        <select class="form-control" formControlName="user">
+        <option *ngFor = "let user of users" [value] = "user.user_name">{{user.user_name}}</option>
+      </select>
+       <span class="error" *ngIf="!userForm.controls['user'].valid && userForm.controls['user'].touched">Korisnik je obavezan za unos</span>
+      </div>
+    </div>
+    <div class="secondRow">
+      <label for="">Zadatak</label>
+      <select class="form-control" formControlName="assignment">
+        <option *ngFor = "let assign of assignments" [value] = "assign.task_name">{{assign.task_name}}</option>
+      </select>
+    <span class="error" *ngIf="!userForm.controls['assignment'].valid && userForm.controls['assignment'].touched">Zadatak je obavezan za unos</span>
+    </div>
+    <div class="thirdRow">
+      <label for="">Opis</label>
+      <input type="text" formControlName="description" class="form-control">
+    </div>
+    <div class="fourthRow">
+      <div class="time">
+        <label for="">Utrošeno vrijeme</label>
+        <input id=foo name=foo type=time min="0:00" max="100:59" formControlName="selTime">
+      </div>
+      <div class="date">
+        <label for="">Datum {{date | date:'longDate'}}</label>
+        <a (click)="show = !show"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+        <ngl-datepicker *ngIf="show" [(date)]="date" class="dTPic"></ngl-datepicker>
+      </div>
+    </div>
+    <div class="fivRow">
+      <button class="btn btn-default reset" (click)="resetForm()">Reset</button>
+      <button class="btn btn-success start" type="submit" (click)="addTask()" [disabled]="!userForm.valid">Započni zadatak</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,86 @@
+.loginPage {
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.header {
+    background-color: #283544;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.header i {
+    font-size: 120px;
+    color: white;
+    padding: 50px;
+}
+
+.login {
+    padding: 5px;
+    background-color: #fff;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.buttons button {
+    width: 50%;
+    font-size: 20px;
+    padding: 15px;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+.cancelBtn {
+    background-color: #283544;
+    color: #ffffff;
+    outline: none;
+}
+
+.loginBtn {
+    background-color: #2ecc71;
+    color: #ffffff;
+    outline: none;
+}
+
+.formControls {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+label {
+    font-size: 18px;
+}
+
+.formControls input[type = text] {
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px solid #EAEAEA;
+    outline: none;
+    font-size: 15px;
+}
+
+.formControls input[type = password ] {
+    padding: 5px;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+      .login {
+          padding: 10px;
+      }
+}
